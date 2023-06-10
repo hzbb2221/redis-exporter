@@ -3,15 +3,15 @@
 
 </br>
 
-### 2. 镜像包地址
-106.55.253.50:9080/prometheus/hhh-redis-exporter:v1.48.0
+### 2. 镜像地址
+hzbb2221/redis-exporter:v1.48.0
 
 </br>
 
 ### 3. 环境变量：
-REDIS_HOST: redis服务主机地址   
-REDIS_PROT: redis服务端口   
-REDIS_PASSWORD: redis连接密码    
+REDIS_HOST: Redis服务主机地址   
+REDIS_PROT: Redis服务端口   
+REDIS_PASSWORD: Redis连接密码    
 
 </br>
 
@@ -19,9 +19,9 @@ REDIS_PASSWORD: redis连接密码
 ```
 docker run -itd --name=redis-exporter \
     --restart=always \
-    -p 29121:29121 \
+    -p 9121:9121 \
     -e REDIS_HOST=192.168.2.224 \
-    -e REDIS_PROT=6289 \
-    -e REDIS_PASSWORD=asD123456. \
-    106.55.253.50:9080/prometheus/hhh-redis-exporter:v1.48.0
+    -e REDIS_PROT=6379 \
+    -e REDIS_PASSWORD=123456 \
+    hzbb2221/redis-exporter:v1.48.0
 ```
