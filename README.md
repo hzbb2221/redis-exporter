@@ -15,7 +15,7 @@ REDIS_PASSWORD: Redis连接密码
 
 </br>
 
-### 4. 创建一个redis-expoert容器
+### 4. 创建一个redis-exporter容器
 ```
 docker run -itd --name=redis-exporter \
     --restart=always \
